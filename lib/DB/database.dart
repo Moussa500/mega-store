@@ -4,6 +4,7 @@ import 'package:mega_store/models/user_model.dart';
 class Database {
   static Map<String, List<ItemsModel>> cart = {};
   static List<ItemsModel> items = [
+    ItemsModel(productName: "TMA-2 HD Wireless", price: 120, id: 5, reviewers: 5, rating: 4.5, image: "assets/TMA-2 HD Wireless.png", description: "The **TMA-2 HD Wireless** headphones are a premium audio solution designed for discerning listeners who value exceptional sound quality, comfort, and versatility. Equipped with high-definition audio drivers, these headphones deliver crystal-clear sound with deep bass, rich mids, and detailed highs, ensuring an immersive listening experience for music enthusiasts and professionals alike. The wireless connectivity features Bluetooth with aptX HD support, providing low-latency, high-fidelity audio transmission for a seamless experience. With a minimalist, modular design, the TMA-2 HD Wireless allows for customization and upgrades, ensuring long-term usability and personalization.Crafted with lightweight, durable materials, the headphones feature ultra-soft memory foam ear cushions coated in Alcantara® for superior comfort during extended use. The impressive battery life of up to 20 hours ensures uninterrupted listening on the go, while the option to switch to a wired connection offers added flexibility.Whether you're a music producer, audiophile, or everyday listener, the TMA-2 HD Wireless combines cutting-edge technology with sleek, sustainable design for a truly outstanding audio experience."),
     ItemsModel(
         id: 1,
         productName: "Asus TUF Gaming",
@@ -59,6 +60,6 @@ class Database {
         description:
             "The Microsoft Xbox One Wireless Controller is the ultimate tool for gamers. Its ergonomic design and textured grips provide a comfortable and secure feel, ensuring precise control during gameplay. Featuring responsive triggers and buttons, this controller delivers a smooth and accurate gaming experience. The wireless connectivity ensures freedom of movement, while compatibility with PC and Xbox expands its versatility. Whether you’re battling online or exploring open-world games, this controller elevates your gaming sessions."),
   ];
-  static List<UserModel> users = [UserModel(email: "yosra@gmail.com",password: "123456",name: "yosra",phoneNumber: "53423830")];
+  static List<UserModel> users = [UserModel(email: "yosra@gmail.com",password: "123456",name: "yosra",phoneNumber: "53423830"),UserModel(email: "example@example.com",name: "example",phoneNumber: "22156789",password: "123456")];
   static String authenticatedUser = "";
 }
